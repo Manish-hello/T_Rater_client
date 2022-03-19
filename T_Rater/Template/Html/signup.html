@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../Static/Css/signup.css">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<h1>SignUp</h1>
+		<input type="email" id="Signup-Email" placeholder="Email">
+		<input type="password" id="Signup-Password" placeholder="Password">
+		<span class="eye-button1">
+			<img src="https://img.icons8.com/nolan/64/visible.png"/ onclick="eyebtn1()">
+		</span>
+		<input type="password" id="Signup-ConPassword" placeholder="Confirm Password">
+		<span class="eye-button2">
+			<img src="https://img.icons8.com/nolan/64/visible.png"/ onclick="eyebtn2()">
+		</span>
+		<input type="submit" value="SignUp" id="Signup-btn">
+	</form>
+	<script>
+		var state=false;
+		function eyebtn1(){
+			if(state){
+				document.querySelector("#Signup-Password").setAttribute("type","Password");
+				state=false;
+			}
+			else{
+				document.querySelector("#Signup-Password").setAttribute("type","text");
+				state=true;
+			}
+		}
+		function eyebtn2(){
+			if(state){
+				document.querySelector("#Signup-ConPassword").setAttribute("type","Password");
+				state=false;
+			}
+			else{
+				document.querySelector("#Signup-ConPassword").setAttribute("type","text");
+				state=true;
+			}
+		}
+	</script>
+</body>
+</html>

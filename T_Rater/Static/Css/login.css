@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu+Condensed&display=swap');
+:root{
+	--color1:rgba(220, 20, 60,1.0);
+	--color2: rgba(255, 240, 245,1.0);
+	--color3: rgba(95, 158, 160,1.0);
+	--color4: rgba(0, 255, 127,1.0);
+	--color5: rgba(255, 215, 0,1.0);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.main-form-body{
+	position: absolute;
+	height: 30rem;
+	width: 25rem;
+	top: 15%;
+	background: rgba(0, 0, 0, .65);
+	padding: 1rem;
+	text-align: center;
+	border-radius: .7rem;
+	box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4);
+}
+form h1{
+	font-family: 'Baloo 2', cursive;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 3rem;
+	color: white;
+}
+form h2,h3{
+	color:var(--color1);
+	font-weight: bold;
+	font-family: 'Baloo 2', cursive;
+	position: relative;
+	top:.8rem;
+	left: -4.5rem;
+	font-size: 1.3rem;
+}
+form h2{
+	left: -5.5rem;
+}
+#Name,#Password{
+	font-family: 'Baloo 2', cursive;
+	font-size: .8rem;
+	cursor: pointer;
+	border: 0;
+	display: block;
+	margin: 8px auto;
+	text-align: center;
+	border: 3px solid var(--color2);
+	padding: .5rem 3rem;
+	border-radius: 2rem;
+	background: rgba(0, 0, 0, 0.5);
+	color: var(--color5);
+	outline: none;
+}
+.eye-button img{
+	position:absolute;
+	height: 1.6rem;
+	width: 1.6rem;
+	top: 49%;
+	right: 20%;
+	cursor: pointer;
+}
+#login-btn{
+	position:relative;
+	cursor:pointer;
+	top:2.5rem;
+	left: 1.7rem;
+	border:none;
+	border-radius:2rem;
+	padding:.5rem 1.5rem;
+	color: var(--color1);
+	background:var(--color4);
+	font-weight:bolder;
+	font-size:1rem;
+	font-family:'Ubuntu Condensed', sans-serif;
+	transition:1s;
+}
+#login-btn:hover{
+    background: var(--color5);
+    transform: scale(1.2);
+}
+.signup-link{
+	position: relative;
+	top: 6rem;
+	left: -10rem;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:'Ubuntu Condensed', sans-serif;
+	cursor: pointer;
+	color: white;
+	transition: .4s;
+}
+.signup-link:hover{
+	color: var(--color5);
+}
+@media screen and (max-width: 600px){
+	body{
+        background-size:cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 599px){
+     body{
+        background-size:cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+}

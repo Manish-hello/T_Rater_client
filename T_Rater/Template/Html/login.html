@@ -31,6 +31,23 @@
 				state=true;
 			}
 		}
+		
+		//--- Login handel
+		document.getElementById("login-btn").addEventListener("click",async (e)=>{
+			e.preventDefault();
+			let send_data={
+				email:document.getElementById("Name").value,
+				pword:document.getElementById("Password").value
+			}
+			let res= await fetch("/login",{method:"POST",body:JSON.stringify(send_data)});
+			if(res.status===200){
+				let j=await res.json();
+				localStorage.setItem("user", JSON.stringify(j));
+				document.location="/home"
+			}else alert("Wrong email/passord");
+			
+		})
+		
 	</script>
 </body>
 </html>
